@@ -54,7 +54,6 @@ h1 {
     min-height: 5rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-around;
 }
 
@@ -72,6 +71,11 @@ h1 {
 
 .active .minus {
     display: inline-block;
+    margin-top: 1rem;
+}
+
+.active h2 {
+    margin-top: 1rem;
 }
 
 .active .plus {
@@ -108,8 +112,62 @@ h2 {
 
 p {
     color: hsl(292, 16%, 49%);
-    width: 100%;
+    width: 33rem;
+    line-height: 22px;
     display: none;
     margin: 2rem 0;
     
+}
+
+@media(max-width: 375px) {
+
+    body {
+        background: url(./assets/images/background-pattern-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: 0vh -2vw;
+        background-color: hsl(275, 100%, 97%);
+        font-size: 14px;
+        align-items: baseline;
+        margin-top: 8rem;
+    }
+    
+    .layout {
+        width: 325px;
+        min-height: 400px;
+    }
+    
+
+    
+    .star {
+        width: 25px;
+        margin: 1.5rem 1.5rem .5rem 1.5rem;
+    }
+    
+    h1 {
+        font-size: 35px;
+        margin: 1.5rem 0 .5rem 0;
+    }
+    
+    .accordian {
+        width: 85%;
+    }
+    
+    .accordian:hover h2 {
+        color: hsl(292, 42%, 14%);
+    }
+    
+    h2 {
+        font-size: 16px;
+        width: 14rem;
+        
+    }
+    
+    
+    p {
+        width: 17rem;
+        margin: 2rem 0;
+        
+    }
+
+
 }
