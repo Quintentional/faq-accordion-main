@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(./assets/images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: 0vh -2vw;
+    background-size: 100vw;
+    background-color: hsl(275, 100%, 97%);
+    width: 100%;
+    min-height: 100vh;
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.layout {
+    background-color: hsl(0,0%,100%);
+    width: 600px;
+    min-height: 475px;
+    border-radius: 10px;
+}
+
+h1-div {
+    display: flex;
+    width: 100%;
+}
+
+.star {
+    margin: 3rem 1.5rem 2rem 2rem;
+}
+
+h1 {
+    color: hsl(292, 42%, 14%);
+    font-size: 55px;
+    margin: 3rem 1rem 2rem 0;
+}
+
+.accordian-div {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.accordian {
+    width: 90%;
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.accordian:hover {
+    cursor: pointer;
+}
+
+.accordian:hover h2 {
+    color: hsl(281, 82%, 54%);
+}
+
+.active p {
+    display: block;
+}
+
+.active .minus {
+    display: inline-block;
+}
+
+.active .plus {
+    display: none;
+}
+
+.border {
+    border-bottom: 1px solid hsla(293, 16%, 49%, 0.082);
+}
+
+h2 {
+    color: hsl(292, 42%, 14%);
+    font-size: 18px;
+    
+}
+
+.question {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.minus {
+    display: none;
+}
+
+.plus {
+    display: inline-block;
+}
+
+
+p {
+    color: hsl(292, 16%, 49%);
+    width: 100%;
+    display: none;
+    margin: 2rem 0;
+    
+}
